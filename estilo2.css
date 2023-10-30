@@ -1,0 +1,355 @@
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+header{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logoi{
+    display: flex;
+    align-items: center;
+}
+.carousel{
+    z-index: 1;
+}
+.presentacion{
+    width: 100%;
+    padding-top: 2%;
+    margin: 0%;
+}
+.presentacion h1{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 5%;
+    font-weight: 600;
+}
+.presentacion p{
+    width: 80%;
+    padding-left: 10%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0%;
+}
+.logo{
+   width: 100%;
+   padding-left: 10px;
+}
+.logo img{
+    border-radius: 15px;
+    margin: 20px;
+}
+header h1{
+    color: white;
+    padding: 5%;
+}
+.icon{
+    display: none;
+}
+.nav{
+    height: 80px;
+    color:white;
+}
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_label, .nav_input{
+    display: none;
+}
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap:2em;
+    z-index: 1;
+    padding-right: 2%;
+    width: 600px;
+}
+
+.nav_item{
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.nav_item:after{
+    content: "";
+    display: block;
+    background: radial-gradient(circle at 10% 20%, #7A57D1 0%, rgb(0, 0, 0) 90.5%);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+.nav_item:hover, .bookmarks ul li{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    color: #7A57D1;
+}
+.mcodes{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.mcodes h1{
+    color: #0F4E89;
+}
+.mcodes p{
+    color: #625580;
+    font-size: 20px;
+}
+.mcodes img{
+    width: 35%;
+}
+.mcodes img:hover{
+    scale: 0.8;
+}
+.lista{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+.item h2{
+    color: #0F4E89;
+}
+.item a{
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 960px;
+    margin: auto;
+}
+.bloque h1{
+    margin: 0;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    line-height: 500px;
+}
+.bloque p{
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.bloque ul{
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.bloque.paralax{
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#tienda1{
+    margin: auto;
+    display: none;
+}
+.lis{
+    padding-top: 50px;
+    display: flex;
+    justify-content:space-between;
+    max-width: 960px;
+    margin: auto;
+}
+.paralax.diseño{
+    background-image: url(./IMG/servicios/diseño.png);
+}
+.paralax.redes1{
+    background-image: url(./IMG/servicios/redes.png);
+}
+.paralax.tienda{
+    background-image: url(./IMG/servicios/tienda.png);
+}
+#cartas, #cartas2{
+    display: none;
+}
+.lista2{
+    list-style: url(./IMG/servicios/icons/bx-label.svg);
+}
+.lista2 li{
+    font-size: 25px;
+}
+
+.button_slide {
+    color: #FFF;
+    font-weight: 600;
+    background-color: #7A57D1;
+    border: 2px solid #7A57D1;
+    border-radius: 8px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #6DC9EB;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  .slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #6DC9EB;
+    color: black;
+    border: 2px solid #6DC9EB;
+  }
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:80px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+}
+.whatsapp:hover{
+    scale: 1.2;
+}
+
+.whatsapp-icon {
+    margin-top:13px;
+}
+.footer-basic {
+    padding:40px 0;
+    background-color:black;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+@media (max-width: 480px){
+    .nav_item{
+        display: none;
+    }
+    .bloque{
+        width: 100%;
+    }
+    .bloque h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .contenedor{
+        width: 80%;
+    }
+    
+    .nav{
+        width: 100%;
+    }
+    .nav_container{
+        justify-content: space-around;
+        height: 70px;
+        background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+        position: fixed;
+        bottom: 0;
+    }
+    .logoi{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        margin: auto;
+    }
+    .mcodes{
+        display: block;
+    }
+    .mcodes img{
+        width: 80%;
+        margin: auto;
+    }
+    .lista{
+        display: none;
+    }
+    .contenedor{
+        max-width: 100%;
+    }
+    .lis{
+        display: none;
+    }
+    .footer-basic{
+        width: 100%;
+    }
+}
